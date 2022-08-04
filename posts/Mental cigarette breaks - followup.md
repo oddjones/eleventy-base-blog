@@ -1,7 +1,7 @@
 ---
 title: Mental Cigarette breaks (followup)
-description: This is a post on My Blog about touchpoints and circling wagons.
-date: 2018-09-30
+description: How I got on implementing my Mental Cigarette break idea
+date: 2022-08-04
 tags:
   - PKM
   - time management
