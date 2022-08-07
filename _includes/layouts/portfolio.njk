@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-portfolio
+---
+
+<main class="stack">
+  <section class="splash cluster">
+    <section>
+      <h1>Dominic Jones</h1>
+      <h2>Senior UX engineer / product design / front end</h2>
+      <a
+        href="/media/dominic-jones-cv-latest.pdf"
+        target="_blank"
+        class="button"
+        >download CV</a
+      >
+    </section>
+    <section class="heroImg"></section>
+  </section>
+  <section class="about">
+    <section class="sectionHeader">
+      <h2>About</h2>
+      <p>
+        I&apos;m a seasoned web all-rounder, with a broad & deep skillset
+        wrought from 25 years&apos; experience. I have extensive experience in
+        many digital roles - creative director, webmaster, designer, developer,
+        user researcher, team lead, UX lead. I&apos;m a proven design thinker &
+        strategist, confident working in both agile and waterfall methodologies.
+        I love what I do and see every day as a new day in school.
+      </p>
+    </section>
+    <section class="stats cluster">
+      {% for stat in stats %}
+      <div class="statbox stack">
+        <span class="number">{{ stat.stat }}</span
+        ><span class="statName">{{ stat.name }}</span>
+      </div>
+      {% endfor %}
+    </section>
+  </section>
+  <Section class="caseStudies">
+    <section class="sectionHeader"><h2>Case studies</h2></section>
+    <ol>
+      {% for caseStudy in caseStudies %}
+      <li>
+        <div class="cluster caseStudy">
+          <article>
+            <h3>{{ caseStudy.title }}</h3>
+            <p>{{ caseStudy.content }}</p>
+          </article>
+          <aside>
+            <img src="/img/{{ caseStudy.img }}" alt="{{ caseStudy.img }}" />
+          </aside>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </Section>
+</main>
