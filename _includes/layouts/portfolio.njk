@@ -1,6 +1,9 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-portfolio
+eleventyNavigation:
+  key: Portfolio
+  order: 4
 ---
 
 <main class="stack">
@@ -41,15 +44,18 @@ templateClass: tmpl-portfolio
   <Section class="caseStudies">
     <section class="sectionHeader"><h2>Case studies</h2></section>
     <ol>
-      {% for caseStudy in caseStudies %}
+      {%- for caseStudy in collections.caseStudy -%}
       <li>
         <div class="cluster caseStudy">
           <article>
-            <h3>{{ caseStudy.title }}</h3>
-            <p>{{ caseStudy.content }}</p>
+            <h3>{{ caseStudy.data.title }}</h3>
+            <p>{{ caseStudy.data.content }}</p>
           </article>
           <aside>
-            <img src="/img/{{ caseStudy.img }}" alt="{{ caseStudy.img }}" />
+            <img
+              src="/img/{{ caseStudy.data.img }}"
+              alt="{{ caseStudy.data.img }}"
+            />
           </aside>
         </div>
       </li>
