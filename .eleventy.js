@@ -18,6 +18,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
+  // Watch CSS files for changes
+  eleventyConfig.setBrowserSyncConfig({
+    files: "./_site/css/**/*.css",
+  });
+
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "dd LLL yyyy"

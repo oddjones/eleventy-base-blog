@@ -1,14 +1,13 @@
 ---
-title: I miss cigarette breaks
+title: A case for "Mental Cigarette Breaks"
 description: A proposal to introduce "mental cigarette breaks"
 date: 2022-08-04
 tags:
   - PKM
-  - time management
+  - Mental health
+  - mindfulness
 layout: layouts/post.njk
 ---
-
-# I miss cigarette breaks
 
 I pride myself on not having smoked for over 15 years. It's a filthy habit and one that took a long time to break. (Patches, if you want to know are what did it for me - plus being an early adopter of what at the time were called "e-cigarettes"). It took a long time for me not to get hooked by the nose like the kids in the bisto ad whenever I smelled cigarette smoke (not the smell of cigarettes on clothes or in houses, smokers - that _stinks_ just in case you didn't know)
 

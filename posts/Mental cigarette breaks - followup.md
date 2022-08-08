@@ -1,14 +1,13 @@
 ---
-title: Mental Cigarette breaks (followup)
+title: Implementing Mental Cigarette Breaks
 description: How I got on implementing my Mental Cigarette break idea
 date: 2022-08-04
 tags:
   - PKM
-  - time management
+  - Mental health
+  - mindfulness
 layout: layouts/post.njk
 ---
-
-# Mental cigarette breaks - followup
 
 So for those of you who are interested in how I got on with my "mental cigarette breaks" thing - my first problem was how to set up a recurring reminder on the hour, every hour but only during weekdays.
 
