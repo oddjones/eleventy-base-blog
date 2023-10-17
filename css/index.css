@@ -55,8 +55,6 @@
 }
 
 /*Layout*/
-
-/*Global scale */
 .cluster {
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +76,8 @@
 .stack > * + * {
   margin-block-start: var(--space, 1.5rem);
 }
+
+/*Global scale */
 
 html,
 body {
@@ -104,6 +104,12 @@ p,
   line-height: 1.45;
 }
 
+.tmpl-portfolio {
+  padding: 0rem 2rem;
+  .stack {
+    padding: 0rem;
+  }
+}
 a[href] {
   color: var(--text-color-link);
 }

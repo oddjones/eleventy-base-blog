@@ -8,7 +8,7 @@ eleventyNavigation:
 
 <main class="stack">
   <section class="splash cluster">
-    <section>
+    <section class="biog">
       <h1>Dominic Jones</h1>
       <h2>Senior UX engineer / product design / front end</h2>
       <a
@@ -17,21 +17,23 @@ eleventyNavigation:
         class="button"
         >download CV</a
       >
+
     </section>
-    <section class="heroImg"></section>
+<div class="heroImg"></div>
   </section>
   <section class="about">
     <section class="sectionHeader">
       <h2>About</h2>
       <p>
         I&apos;m a seasoned web all-rounder, with a broad & deep skillset
-        wrought from 25 years&apos; experience. I have extensive experience in
+        wrought from 30 years&apos; experience. I have extensive experience in
         many digital roles - creative director, webmaster, designer, developer,
         user researcher, team lead, UX lead. I&apos;m a proven design thinker &
         strategist, confident working in both agile and waterfall methodologies.
-        I love what I do and see every day as a new day in school.
+        I love what I do and see every day as a day in school.
       </p>
     </section>
+  </section>
     <section class="stats cluster">
       {% for stat in stats %}
       <div class="statbox stack">
@@ -40,13 +42,12 @@ eleventyNavigation:
       </div>
       {% endfor %}
     </section>
-  </section>
   <Section class="caseStudies">
     <section class="sectionHeader"><h2>Case studies</h2></section>
     <ol>
       {%- for caseStudy in collections.caseStudy -%}
-      <li>
-        <div class="cluster caseStudy">
+      <li class="caseStudy">
+
           <article>
             <h3>{{ caseStudy.data.title }}</h3>
             <p>{{ caseStudy.data.content }}</p>
@@ -56,10 +57,35 @@ eleventyNavigation:
               src="/img/{{ caseStudy.data.img }}"
               alt="{{ caseStudy.data.img }}"
             />
+            <span class="when">{{ caseStudy.data.period }}</span>
           </aside>
-        </div>
+
       </li>
       {% endfor %}
     </ol>
   </Section>
 </main>
+
+{%block pageScripts%}
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script>
+  //domready
+  $(document).ready(function(){
+    //append a div to each of the case studies' child articles giving the ordinal position of that li
+    $('.caseStudy').each(function(index){
+      //if index is less than 10 add a leading zero
+      if(index<9){
+        index = '0'+(index+1)
+      }else{index = index+1}
+      $(this).find('article').prepend('<div class="caseStudyNumber" aria-hidden="true">'+(index)+'</div>')
+    })
+  })
+  </script>
+
+
+
+
+{% endblock%}
