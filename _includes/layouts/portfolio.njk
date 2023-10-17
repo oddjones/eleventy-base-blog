@@ -37,12 +37,13 @@ eleventyNavigation:
     <section class="stats cluster">
       {% for stat in stats %}
       <div class="statbox stack">
-        <span class="number">{{ stat.stat }}</span
+
+        <span class="timer number" >{{stat.stat}}</span
         ><span class="statName">{{ stat.name }}</span>
       </div>
       {% endfor %}
     </section>
-  <Section class="caseStudies">
+  <section class="caseStudies">
     <section class="sectionHeader"><h2>Case studies</h2></section>
     <ol>
       {%- for caseStudy in collections.caseStudy -%}
@@ -63,14 +64,16 @@ eleventyNavigation:
       </li>
       {% endfor %}
     </ol>
-  </Section>
+  </section>
 </main>
 
-{%block pageScripts%}
+{% block scripts %}
+
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
+
   <script>
   //domready
   $(document).ready(function(){
@@ -82,10 +85,7 @@ eleventyNavigation:
       }else{index = index+1}
       $(this).find('article').prepend('<div class="caseStudyNumber" aria-hidden="true">'+(index)+'</div>')
     })
+
   })
   </script>
-
-
-
-
 {% endblock%}
