@@ -150,16 +150,20 @@ h1.home a {
   .tmpl-portfolio {
     padding: 0px;
   }
+  section.about {
+    margin: 0px !important;
+  }
   .splash {
     height: 70vh;
     background-size: 100%;
+    margin: 0px;
 
     .heroImg {
       width: 100%;
       height: 100%;
     }
     .biog {
-      max-width: 90vw;
+      max-width: 100vw;
       left: 0px;
       top: 60vh;
       background-color: var(--background-mask);
