@@ -85,7 +85,7 @@ body {
 
 .tmpl-portfolio {
   .about {
-    background: #fff;
+    background: var(--text-color);
     padding: 2rem;
     margin: 0rem -2rem;
     text-align: center;
