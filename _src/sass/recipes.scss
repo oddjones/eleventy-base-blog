@@ -13,7 +13,9 @@
   --color-gray-50: #c0c0c0;
   --color-gray-90: #333;
 
-  --background-color: #fff;
+  --background-color: var(--color-gray-20);
+  --background-ghost: rgba(224, 224, 224, 0.4);
+  --background-mask: rgba(224, 224, 224, 0.8);
 
   --text-color: var(--color-gray-90);
   --text-color-link: #082840;
@@ -31,6 +33,8 @@
     --text-color-link-visited: #a6a6f8;
 
     --background-color: #15202b;
+    --background-ghost: rgba(21, 32, 43, 0.4);
+    --background-mask: rgba(21, 32, 43, 0.8);
   }
 }
 
@@ -60,26 +64,8 @@ body {
     left: 4rem;
     top: 9rem;
     max-width: 50vw;
-    background-color: rgba(21, 32, 43, 0.4);
+    background-color: var(--background-ghost);
     padding: 1rem;
-  }
-}
-//media query for mobile phone
-@media (max-width: 600px) {
-  .splash {
-    height: 70vh;
-    background-size: 100%;
-
-    .heroImg {
-      width: 100%;
-      height: 100%;
-    }
-    .biog {
-      max-width: 90vw;
-      left: 5vw;
-      top: 60vh;
-      background-color: rgba(21, 32, 43, 0.8);
-    }
   }
 }
 
@@ -153,4 +139,47 @@ body {
   }
 }
 
+nav ul.nav li a,
+h1.home a {
+  color: var(--text-color) !important;
+}
 //hide content from screenreaders
+
+//media query for mobile phone
+@media (max-width: 600px) {
+  .tmpl-portfolio {
+    padding: 0px;
+  }
+  .splash {
+    height: 70vh;
+    background-size: 100%;
+
+    .heroImg {
+      width: 100%;
+      height: 100%;
+    }
+    .biog {
+      max-width: 90vw;
+      left: 0px;
+      top: 60vh;
+      background-color: var(--background-mask);
+    }
+  }
+  .caseStudies {
+    ol li aside {
+      display: none;
+    }
+    ol li article {
+      width: 100%;
+      padding: 1rem;
+      .caseStudyNumber {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        border-bottom: 3px solid;
+      }
+    }
+  }
+}
