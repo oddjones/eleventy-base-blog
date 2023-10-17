@@ -1,18 +1,124 @@
 ---
-layout: layouts/home.njk
+layout: layouts/base.njk
+templateClass: tmpl-portfolio
 eleventyNavigation:
-  key: Home
+  key: Portfolio
   order: 1
 ---
 
-{% set maxPosts = collections.posts.length | min(10) %}
-<h1>
-  Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}
-</h1>
+<main class="stack">
+  <section class="splash cluster">
+    <section class="biog">
+      <h1>Dominic Jones</h1>
+      <h2>Senior UX engineer / product design / front end</h2>
+      <a
+        href="/img/DominicJonesCV.pdf"
+        target="_blank"
+        class="button"
+        >download CV</a
+      >
 
-{% set postslist = collections.posts | head(-10) %} {% set postslistCounter =
-collections.posts | length %} {% include "postslist.njk" %}
+    </section>
+<div class="heroImg"></div>
+  </section>
+  <section class="about">
+    <section class="sectionHeader">
+      <h2>About</h2>
+      <p>
+        I&apos;m a seasoned web all-rounder, with a broad & deep skillset
+        wrought from 30 years&apos; experience. I have extensive experience in
+        many digital roles - creative director, webmaster, designer, developer,
+        user researcher, team lead, UX lead. I&apos;m a proven design thinker &
+        strategist, confident working in both agile and waterfall methodologies.
+        I love what I do and see every day as a day in school.
+      </p>
+    </section>
+  </section>
+    <section class="stats cluster">
+      {% for stat in stats %}
+      <div class="statbox stack">
 
-<p>
-  More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.
-</p>
+        <span class="timer number" >{{stat.stat}}</span
+        ><span class="statName">{{ stat.name }}</span>
+      </div>
+      {% endfor %}
+    </section>
+  <section class="caseStudies">
+    <section class="sectionHeader"><h2>Case studies</h2></section>
+    <ol>
+      {%- for caseStudy in collections.caseStudy -%}
+      <li class="caseStudy">
+
+          <article>
+            <h3>{{ caseStudy.data.title }}</h3>
+            <p>{{ caseStudy.data.content }}</p>
+          </article>
+          <aside>
+            <img
+              src="/img/{{ caseStudy.data.img }}"
+              alt="{{ caseStudy.data.img }}"
+            />
+            <span class="when">{{ caseStudy.data.period }}</span>
+          </aside>
+
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+</main>
+<footer>
+<section class="sectionHeader"><h2>Contact</h2></section>
+        <div class="footer">
+        <nav id="contact"><ul class="footernav">
+        <li ><a href="tel:+447540 847582" class="stack"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></div><h3>Phone</h3><p>+44 (0)7540 847582</p></a></li>
+        <li ><a href="mailto:info@jonesthecode.com" class="stack"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></div><h3>Email</h3><p>info@jonesthecode.com</p></a></li>
+        <li ><a href="https://maps.app.goo.gl/DcvdfrYuQkqdgVL7A" class="stack"><div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+        </div><h3>Location</h3><p>Tarporley<br/>Cheshire</p></a></li>
+
+        </ul></nav>
+          <div class="copyright">
+            <a href="index.html"
+              ><img src="wp-content/uploads/2018/01/jtc-black.png" alt=""
+            /></a>
+            <span
+              >© 2023. All rights reserved. jonesthecode</span
+            >
+          </div>
+          <div class="follow">
+            <a href="https://twitter.com/oddjones" class="fa fa fa-twitter"></a>
+            <a
+              href="https://www.linkedin.com/in/oddjones"
+              class="fa fa fa-linkedin"
+            ></a>
+            <a href="https://about.me/dominic.jones" class="fa fa fa-child"></a>
+          </div>
+          <a href="#" class="up-button">
+            <span class="fa fa-angle-up"></span>
+          </a>
+        </div>
+
+</footer>
+
+{% block scripts %}
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+  <script>
+  //domready
+  $(document).ready(function(){
+    //append a div to each of the case studies' child articles giving the ordinal position of that li
+    $('.caseStudy').each(function(index){
+      //if index is less than 10 add a leading zero
+      if(index<9){
+        index = '0'+(index+1)
+      }else{index = index+1}
+      $(this).find('article').prepend('<div class="caseStudyNumber" aria-hidden="true">'+(index)+'</div>')
+    })
+
+  })
+  </script>
+{% endblock%}
