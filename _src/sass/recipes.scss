@@ -66,6 +66,11 @@ body {
     max-width: 50vw;
     background-color: var(--background-ghost);
     padding: 1rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 0px;
+    }
   }
 }
 
@@ -96,19 +101,22 @@ body {
 .globalHeader {
   width: 100vw;
   justify-content: space-between;
+  nav {
+  }
+}
+
+.sectionHeader {
+  text-align: center;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 3rem;
+  margin: 0px -2rem;
+  h2 {
+    margin: 0px;
+  }
 }
 
 .caseStudies {
-  .sectionHeader {
-    text-align: center;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    padding: 2rem;
-    margin: 0px -2rem;
-    h2 {
-      margin: 0px;
-    }
-  }
   ol {
     padding: 0px;
     li {
@@ -128,7 +136,7 @@ body {
           font-weight: 800;
           margin-bottom: 0.5rem;
           display: inline-block;
-          border-bottom: 3px solid;
+          border-bottom: 3px solid #929084;
         }
       }
     }
@@ -173,6 +181,52 @@ nav ul.nav li a,
 h1.home a {
   color: var(--text-color) !important;
 }
+
+footer {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  margin-left: -2rem;
+  margin-right: -2rem;
+  ul.footernav {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    li {
+      list-style: none;
+      .icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 2rem;
+        background-color: #929084;
+        color: white;
+      }
+      a {
+        color: var(--background-color);
+        text-decoration: none;
+        align-items: center;
+        gap: 5px;
+        &:visited {
+          color: var(--background-color);
+        }
+        h3 {
+          font-size: small;
+          font-weight: bold;
+          margin: 0px;
+        }
+        p {
+          font-size: small;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
 //hide content from screenreaders
 
 //media query for mobile phone
@@ -180,7 +234,9 @@ h1.home a {
   .tmpl-portfolio {
     padding: 0px;
   }
-  section.about {
+  section.about,
+  .sectionHeader,
+  footer {
     margin: 0px !important;
   }
   .splash {

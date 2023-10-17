@@ -127,7 +127,6 @@ header {
   border-bottom: 1px dashed var(--color-gray-20);
 }
 header:after {
-  content: "";
   display: table;
   clear: both;
 }
@@ -186,8 +185,7 @@ h3 {
 /* Header */
 .home {
   padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
+
   font-size: 1em; /* 16px /16 */
   font-weight: 300;
 }
