@@ -3,7 +3,7 @@
     employer: Experian
     date: 2018-01-13
     period: 2016-17
-    content: Working with the UK government digital service (GDS) on class-leading software as a service to enable UK citizens to register for vital services such as universal credit. I am responsible for all UX strategy and product design as well as ongoing conversion uplift and new opportunity generation.
+    summary: Working with the UK government digital service (GDS) on class-leading software as a service to enable UK citizens to register for vital services such as universal credit. I am responsible for all UX strategy and product design as well as ongoing conversion uplift and new opportunity generation.
     img: idaas-pixellated.png
 
 ---
