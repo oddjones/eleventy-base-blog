@@ -1,7 +1,8 @@
 ---
-    title: Electronic library for Liverpool
-    employer: Liverpool City Council
-    period: 2012
-    summary: ReadLiverpool is a full-featured electronic library for the citizens of Liverpool. I acted as Product Owner, Lead Designer and developed the site from photos to sketch, to mockup, to functional HTML/CSS/Javascript prototype. Working closely with library staff, the site was extensively usability tested across the full demographic range of Liverpool citizens so as to be as easy to use as possible.
-    img: library.png
+title: Electronic library for Liverpool
+employer: Liverpool City Council
+period: 2012
+order: 11
+summary: "Product owner and lead designer for ReadLiverpool—took the electronic library from photos and sketches through mockups to a functional HTML/CSS/JS prototype. Usability-tested across Liverpool’s full demographic range so a complex catalogue and borrowing workflow stayed easy to use."
+img: library.png
 ---

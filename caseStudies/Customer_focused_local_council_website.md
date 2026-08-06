@@ -1,11 +1,11 @@
 ---
-    title: Customer focused local council website
-    employer: Liverpool City Council
-    date: 2016-14-11
-    period: Summer 2011
-    summary: I worked for Liverpool City Council for 15 years as an integral part of their Digital Services team overseeing 5 design iterations of liverpool.gov.uk. In 2011 we performed a customer focused “Top Tasks” optimisation of the site which served as the template for a new generation of transactional council websites.
-    img: lcc-1.png
-
+title: Customer focused local council website
+employer: Liverpool City Council
+date: 2016-14-11
+period: 2011
+order: 12
+summary: "Led the 2011 Top Tasks redesign of liverpool.gov.uk—cut thousands of pages to a focused transactional IA, shipped standards-compliant accessible front-end, and drove an 18% drop in call-centre contact within six months. The information architecture and UI patterns were widely copied across UK local government."
+img: lcc-1.png
 ---
 
 I worked for Liverpool City Council for 15 years, as a fundamental and integral part of their Digital Services team (for the period between 2002 and 2012 known as Liverpool Direct Limited Digital Services) overseeing 5 design iterations of their flagship Liverpool.gov.uk website. Taking it from a frameset/table based design through implementing content management systems, introducing standards compliant, accessible, semantic code, performing a radical customer-focused re-interpretation to making it the multi-channel, mobile first, transactional site that it is today.

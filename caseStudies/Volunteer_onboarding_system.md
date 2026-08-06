@@ -1,7 +1,8 @@
 ---
-    title: Volunteer onboarding system
-    employer: cloudThing
-    period: 2021
-    summary: These charities, between them the UK's largest volunteer organisations, had a joint project to create a new onboarding system for volunteers. I ideated the system in 2 weeks from provided user research. I am proud to say my proof of concept has been adopted, largely unchanged, and the system is due to be implemented in 2022
-    img: welcome.png
+title: Volunteer onboarding system
+employer: cloudThing
+period: 2021
+order: 9
+summary: "Designed a joint volunteer onboarding system for the UK’s largest volunteer organisations. Turned provided research into a proof-of-concept product design in two weeks; the concept was adopted largely unchanged and moved into implementation—complex multi-org workflows made approachable for non-technical operators."
+img: welcome.png
 ---

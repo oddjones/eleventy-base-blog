@@ -1,7 +1,8 @@
 ---
-    title: Pipeline - Resource management application in angular.js
-    employer: Liverpool City Council
-    period: 2013
-    summary: Looking to learn angular.js in my spare time I took it upon myself to build a useful project as a sideline. Back ended on the trello API, Pipeline manages team resources to agile projects, showing gantt chart views of project timelines, resources and team leave.
-    img: pipeline.jpg
+title: Pipeline – resource management in Angular.js
+employer: Side project
+period: 2013
+order: 8
+summary: "Built Pipeline end to end as a side project to learn Angular.js—a resource-management app on the Trello API with Gantt views of project timelines, team capacity, and leave. Design and code owned by me: data-dense scheduling UI for agile teams doing “calendar Tetris” with real constraints."
+img: pipeline.jpg
 ---

@@ -1,7 +1,8 @@
 ---
-    title: Digital marketing strategy for council fostering service
-    employer: Liverpool City Council
-    period: 2015
-    summary: I was engaged by Liverpool City Council’s fostering team to help resolve a crisis in local foster care provision due in large part to competition from more expensive Independent agencies targeting foster carers on social media and search. Working closely with the fostering team we convinced senior council leaders to fund a one-off proof of concept digital marketing push aligned with a relaunched and rebranded council fostering web offering.
-    img: mba-fostering.jpg
+title: Digital marketing strategy for council fostering service
+employer: Liverpool City Council
+period: 2015
+order: 13
+summary: "Helped Liverpool’s fostering team respond to competition from independent agencies with a proof-of-concept digital marketing push and relaunched fostering web offering—strategy and product framing to stabilise local foster care provision."
+img: mba-fostering.jpg
 ---

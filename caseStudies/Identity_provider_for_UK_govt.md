@@ -1,11 +1,11 @@
 ---
-    title: Identity provider for UK govt
-    employer: Experian
-    date: 2018-01-13
-    period: 2016-17
-    summary: Working with the UK government digital service (GDS) on class-leading software as a service to enable UK citizens to register for vital services such as universal credit. I am responsible for all UX strategy and product design as well as ongoing conversion uplift and new opportunity generation.
-    img: idaas-pixellated.png
-
+title: Identity provider for UK govt
+employer: Experian
+date: 2018-01-13
+period: 2016–2018
+order: 5
+summary: "UX Lead for Experian’s identity provider on GOV.UK Verify—designed complex authentication journeys and shipped HTML/CSS/JS prototypes to GDS standards. Mapped multi-path flows, instrumented conversion analytics, and delivered revised mockups and a functional prototype that GDS called “the best we’ve ever seen” at stage gate. Journeys later adopted by Experian’s Creditmatcher brand."
+img: idaas-pixellated.png
 ---
 
 My role at Experian was UX Lead for their consumer facing Identity product.

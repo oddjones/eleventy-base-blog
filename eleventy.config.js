@@ -55,6 +55,12 @@ export default function (eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
+  eleventyConfig.addFilter("byOrder", (collection) => {
+    return [...(collection || [])].sort(
+      (a, b) => (a.data?.order ?? 999) - (b.data?.order ?? 999)
+    );
+  });
+
   function filterTagList(tags) {
     return (tags || []).filter(
       (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1

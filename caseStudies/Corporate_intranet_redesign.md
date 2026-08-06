@@ -1,7 +1,8 @@
 ---
-    title: Corporate intranet redesign
-    employer: Liverpool City Council
-    period: 2014
-    summary: Liverpool City Council employs over 7,500 staff over 50+ sites. The corporate intranet is a massively important tool for internal communications and self-serve transactions for council staff. My team undertook an extensive consultation exercise to establish the key tasks and deliverables of the site. Extensive qualitative and quantitative research was performed including staff surveys, Top Task analysis, treejacking of the IA and a new focus around staff location rather than organisational grouping.
-    img: Screen-Shot-2018-05-09-at-21.25.57.png
+title: Corporate intranet redesign
+employer: Liverpool City Council
+period: 2014
+order: 16
+summary: "Led research and IA for Liverpool City Council’s intranet serving 7,500+ staff across 50+ sites—surveys, Top Tasks, and treejacking to reorient the product around staff location and self-serve transactions rather than org charts."
+img: Screen-Shot-2018-05-09-at-21.25.57.png
 ---

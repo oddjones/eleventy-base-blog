@@ -10,7 +10,7 @@ eleventyNavigation:
   <section class="splash cluster">
     <section class="biog">
       <h1>Dominic Jones</h1>
-      <h2>Senior UX engineer / product design / front end</h2>
+      <h2>Design Engineer – Product Design &amp; Front-end</h2>
       <a
         href="/img/DominicJonesCV.pdf"
         target="_blank"
@@ -25,12 +25,12 @@ eleventyNavigation:
     <section class="sectionHeader">
       <h2>About</h2>
       <p>
-        I&apos;m a seasoned web all-rounder, with a broad & deep skillset
-        wrought from 30 years&apos; experience. I have extensive experience in
-        many digital roles - creative director, webmaster, designer, developer,
-        user researcher, team lead, UX lead. I&apos;m a proven design thinker &
-        strategist, confident working in both agile and waterfall methodologies.
-        I love what I do and see every day as a day in school.
+        Principal Design Engineer specialising in design systems, data-heavy interfaces,
+        and accessible front-end engineering. I blend visual and interaction
+        design with hands-on React/TypeScript implementation—shipping UI end to
+        end, from Figma and wireframes through Storybook components to
+        production. I thrive in distributed, written-first teams and turn messy
+        workflows into clean, scalable product experiences.
       </p>
     </section>
   </section>
@@ -46,7 +46,7 @@ eleventyNavigation:
   <section class="caseStudies">
     <section class="sectionHeader"><h2>Case studies</h2></section>
     <ol>
-      {%- for caseStudy in collections.caseStudy -%}
+      {%- for caseStudy in collections.caseStudy | byOrder -%}
       <li class="caseStudy">
 
           <article>
@@ -56,7 +56,7 @@ eleventyNavigation:
           <aside>
             <img
               src="/img/{{ caseStudy.data.img }}"
-              alt="{{ caseStudy.data.img }}"
+              alt="{{ caseStudy.data.title }}"
             />
             <span class="when">{{ caseStudy.data.period }}</span>
           </aside>
@@ -82,7 +82,7 @@ eleventyNavigation:
               ><img src="wp-content/uploads/2018/01/jtc-black.png" alt=""
             /></a>
             <span
-              >© 2023. All rights reserved. jonesthecode</span
+              >© 2026. All rights reserved. jonesthecode</span
             >
           </div>
           <div class="follow">
