@@ -7,11 +7,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-
-module.exports = function (eleventyConfig) {
-  // If you have other `addPlugin` calls, it’s important that UpgradeHelper is added last.
-  eleventyConfig.addPlugin(UpgradeHelper);
-};
+const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   // Copy the `img` and `css` folders to the output
@@ -23,6 +19,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+  // If you have other `addPlugin` calls, it’s important that UpgradeHelper is added last.
+  //eleventyConfig.addPlugin(UpgradeHelper);
 
   // Watch CSS files for changes
   eleventyConfig.setBrowserSyncConfig({
@@ -106,6 +104,23 @@ module.exports = function (eleventyConfig) {
     },
     ui: false,
     ghostMode: false,
+  });
+
+  eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
+    let metadata = await Image(src, {
+      widths: [300, 600],
+      formats: ["avif", "jpeg"],
+    });
+
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+    };
+
+    // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+    return Image.generateHTML(metadata, imageAttributes);
   });
 
   return {
